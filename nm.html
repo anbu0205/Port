@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>My Profile</title>
+
+<style> 
+body{
+font-family: 'Poppins',sans-serif; margin: 0;
+padding: 0;
+background-color:#acd88d;
+}
+header{
+
+background-color: #020101; color: #ccc;
+text-align: center; padding: 2rem 0; position: relative;
+text-decoration: none;
+
+}
+
+.header-content h1{ font-size: 2.5rem;
+}
+
+.profile-picture{ width: 100px; height: 100px;
+ 
+border-radius: 50%; object-fit: cover; position:initial;
+top: 75px; left: 75px;
+}
+
+nav{
+
+background-color:#c4f6f4; color: purple;
+text-align: center;
+
+}
+
+
+nav ul{
+
+list-style: none; padding: 0; position:relative;
+}
+
+nav ul li{ display: inline; margin:0 10px ;
+}
+
+nav ul li a{
+
+text-decoration: none; color: #000000;
+}
+
+.section-content{ background-color: #f3f3f3; padding: 2rem;
+ 
+margin: 1rem; border-radius: 20px;
+box-shadow: 10 0 10px rgba(0, 4, 0, 0.1);
+
+}
+
+.section-content h2{ text-decoration: none; color: red;
+text-underline:none; font-size: 40px;
+
+}
+
+.section-content ul li a{ text-decoration: none; text-underline:none; color: green;
+
+
+
+}
+
+.download-button{ background-color: #333; color: #fff; padding:10px 10px;
+text-decoration: none; font-size: 30px; border-radius:15px; display: inline-block; margin-top: 10px;
+ 
+}
+
+.download-button:hover{ background-color:aqua;
+}
+
+footer{
+
+text-align: center; padding: 1rem 0;
+background-color: #535; color: #fff;
+}
+
+ul{
+
+list-style: disc; padding-left: 20px; text-decoration: none;
+}
+
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+
+<div class="header-content">
+
+<img src="C:\Users\ELCOT\Desktop\naan muthalvan\background.png"alt="your profile picture" class="profile-picture">
+
+</img>
+
+<h1><font color="orange">Anbu Malathi</font></h1>
+ 
+<p><i>Computer science student</i></p>
+
+</div>
+
+
+</header>
+<nav>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#resume">Resume</a></li>
+
+
+</ul>
+
+</nav>
+
+<section id="about">
+
+<div class="section-content">
+<img src="C:\Users\ELCOT\Desktop\naan muthalvan\PIC3.png"alt="your profile picture">
+
+</img>
+
+<img src="C:\Users\ELCOT\Desktop\naan muthalvan\Snapchat-582099735.jpg"alt="your profile picture" class="profile-picture">
+
+</img>
+
+
+<h2><font color="red">About Me</font></h2>
+
+<p>Hello! Everyone This is <font color="purple"><b>Anbu Malathi</b></font>,a BSc Computer Science Student.</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<div class="section-content">
+<img src="C:\Users\ELCOT\Desktop\naan muthalvan\college.png"alt="your profile picture">
+
+</img>
+
+<h2><font color="green">B.sc(cs-III)</font></h2>
+
+<p>Manonmanium Sundaranar University arts and science college,Naduvakurichi-SNKL</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+ 
+<div class="section-content">
+<img src="C:\Users\ELCOT\Desktop\naan muthalvan\skill.png"alt="your profile picture" class="profile-picture">
+
+</img>
+
+<h2><font color="brown">Skills</font></h2>
+
+<ul>
+
+<li>Python</li>
+
+<li>Java</li>
+
+<li>C++</li>
+
+<li>Html</li>
+
+<li>Data Science</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<div class="section-content">
+
+<h2><font color="blue">Projects</font></h2>
+
+<ul>
+
+<li><a href="#">Projects 1</a></li>
+
+<li><a href="#">Projects 2</a></li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="resume">
+
+<center>
+
+<div class="section-content">
+<img src="C:\Users\ELCOT\Desktop\naan muthalvan\resume.png"alt="your profile picture" class="profile-picture">
+
+</img>
+
+<h2><font color="saffron">Resume</font></h2>
+
+<a href="https://drive.google.com/file/d/1ZYjjyacnlvrny5cyhe8IW99N4BWcSxLD/view?usp=sharing"class="download- button">Download</a>
+
+</div>
+
+</center>
+ 
+</section>
+
+<footer>
+
+<p>&copy;2023 ANBU MALATHI</p>
+
+</footer>
+
+<script>
+
+document.qureySelectorAll('a[href^="#"]').forEach(anchor => {anchor.addEventListener('click',function(e){ e.preventDefault();
+const targetId =this.getAtribute('href').substring(1);
+
+const targetElement = document.getElementById(targetId); if(targetElement){
+window.scrollTo({
+
+top: targetElement.offsetTop, behavior:'smooth'
+});
+
+
+}
+
+})})
+
+</script>
+
+</body>
+
+</html>
